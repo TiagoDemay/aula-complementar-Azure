@@ -23,9 +23,9 @@ theme:
 docs_dir: material
 site_dir: docs
 
-repo_url: https://github.com/insper/supercomp
-repo_name: "SuperComp"
-site_url: https://insper.github.io/supercomp/
+repo_url: https://github.com/TiagoDemay/aula-complementar-Azure
+repo_name: "aula-complementar-Azure"
+site_url: https://TiagoDemay.github.io/aula-complementar-Azure/
 
 
 nav:
