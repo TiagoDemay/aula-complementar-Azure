@@ -1,158 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/sobre/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/sobre/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/aulas/01-introducao/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/aulas/01-introducao/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/aulas/02-03-implementacao-c%2B%2B/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/aulas/02-03-implementacao-c%2B%2B/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/aulas/04-profiling/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/aulas/04-profiling/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/aulas/05-heuristicas/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/aulas/05-heuristicas/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/aulas/06-aleatorizacao/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/aulas/06-aleatorizacao/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/aulas/07-busca-local/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/aulas/07-busca-local/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/aulas/08-busca-global/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/aulas/08-busca-global/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/aulas/09-busca-global-II/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/aulas/09-busca-global-II/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/aulas/10-branch-and-bound/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/aulas/10-branch-and-bound/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/aulas/11-paralelismo/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/aulas/11-paralelismo/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/aulas/12-efeitos-colaterais/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/aulas/12-efeitos-colaterais/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/aulas/13-efeitos-colaterais-II/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/aulas/13-efeitos-colaterais-II/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/aulas/14-intro-gpu/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/aulas/14-intro-gpu/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/aulas/15-gpu-iteradores/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/aulas/15-gpu-iteradores/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/aulas/16-gpu-customizacao/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/aulas/16-gpu-customizacao/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/aulas/17-gpu-aleatoriedade/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/aulas/17-gpu-aleatoriedade/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/projetos/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/projetos/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/projetos/heuristico/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/projetos/heuristico/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/projetos/local/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/projetos/local/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/projetos/2021-2/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/projetos/2021-2/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/projetos/2021-2/busca-exaustiva/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/projetos/2021-2/busca-exaustiva/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/projetos/2021-2/busca-local/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/projetos/2021-2/busca-local/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/projetos/2021-2/heuristico/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/projetos/2021-2/heuristico/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/projetos/2021-2/paralelismo-gpu/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/projetos/2021-2/paralelismo-gpu/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/projetos/2021-2/paralelismo-multicore/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/projetos/2021-2/paralelismo-multicore/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/projetos/2021-2/relatorio-1/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/projetos/2021-2/relatorio-1/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/projetos/2022-1/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/projetos/2022-1/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/projetos/2022-1/SequenceGenerator/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/projetos/2022-1/SequenceGenerator/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://TiagoDemay.github.io/aula-complementar-Azure/projetos/2022-1/heuristico/</loc>
-         <lastmod>2022-03-22</lastmod>
+         <loc>https://tiagodemay.github.io/aula-complementar-Azure/projetos/2022-1/heuristico/</loc>
+         <lastmod>2022-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
