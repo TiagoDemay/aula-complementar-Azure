@@ -15,7 +15,7 @@
     
     
       
-        <title>01 - Introdução - aula-complementar-Azure - 2022</title>
+        <title>Index - aula-complementar-Azure - 2022</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#01-introducao-a-supercomputacao" class="md-skip">
+        <a href="#quickstart-deploy-a-python-django-or-flask-web-app-to-azure-app-service" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              01 - Introdução
+              Index
             
           </span>
         </div>
@@ -246,14 +246,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -274,73 +272,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          01 - Introdução
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="index.ipynb" class="md-nav__link">
         01 - Introdução
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#problemas-estudados-em-supercomputacao" class="md-nav__link">
-    Problemas estudados em SuperComputação
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ferramental" class="md-nav__link">
-    Ferramental
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#algoritmos-sequenciais" class="md-nav__link">
-    Algoritmos sequenciais
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#algoritmos-paralelos" class="md-nav__link">
-    Algoritmos paralelos
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -483,30 +419,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#problemas-estudados-em-supercomputacao" class="md-nav__link">
-    Problemas estudados em SuperComputação
+  <a href="#1-sample-application" class="md-nav__link">
+    1 - Sample application
+  </a>
+  
+    <nav class="md-nav" aria-label="1 - Sample application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flask" class="md-nav__link">
+    [Flask]
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#ferramental" class="md-nav__link">
-    Ferramental
+        
+          <li class="md-nav__item">
+  <a href="#flask_1" class="md-nav__link">
+    [Flask]
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#algoritmos-sequenciais" class="md-nav__link">
-    Algoritmos sequenciais
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#algoritmos-paralelos" class="md-nav__link">
-    Algoritmos paralelos
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -522,261 +457,254 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/TiagoDemay/aula-complementar-Azure/edit/master/docs/aulas/01-introducao/index.ipynb" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/TiagoDemay/aula-complementar-Azure/edit/master/docs/aulas/01-introducao/index.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script>
-(function() {
-  function addWidgetsRenderer() {
-    var requireJsScript = document.createElement('script');
-    requireJsScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js';
-
-    var mimeElement = document.querySelector('script[type="application/vnd.jupyter.widget-view+json"]');
-    var jupyterWidgetsScript = document.createElement('script');
-    var widgetRendererSrc = 'https://unpkg.com/@jupyter-widgets/html-manager@*/dist/embed-amd.js';
-    var widgetState;
-
-    // Fallback for older version:
-    try {
-      widgetState = mimeElement && JSON.parse(mimeElement.innerHTML);
-
-      if (widgetState && (widgetState.version_major < 2 || !widgetState.version_major)) {
-        widgetRendererSrc = 'jupyter-js-widgets@*/dist/embed.js';
-      }
-    } catch(e) {}
-
-    jupyterWidgetsScript.src = widgetRendererSrc;
-
-    document.body.appendChild(requireJsScript);
-    document.body.appendChild(jupyterWidgetsScript);
-  }
-
-  document.addEventListener('DOMContentLoaded', addWidgetsRenderer);
-}());
-</script>
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="01-introducao-a-supercomputacao">01 - Introdução a SuperComputação<a class="headerlink" href="#01-introducao-a-supercomputacao" title="Permanent link">&para;</a></h1>
 <p>Como vimos na expositiva, uma solução de alto desempenho depende de três partes:</p>
 <p>Microsoft Azure: Cloud Computing Services <a href="https://azure.microsoft.com/en-us/free/">https://azure.microsoft.com/en-us/free/</a>
 <a href="https://azure.microsoft.com/en-us/free/students/">https://azure.microsoft.com/en-us/free/students/</a>
 <a href="https://azure.microsoft.com/en-us/offers/ms-azr-0170p/">https://azure.microsoft.com/en-us/offers/ms-azr-0170p/</a>
 <a href="https://www.microsoftazuresponsorships.com/Balance">https://www.microsoftazuresponsorships.com/Balance</a></p>
+<h1 id="quickstart-deploy-a-python-django-or-flask-web-app-to-azure-app-service">Quickstart: Deploy a Python (Django or Flask) web app to Azure App Service<a class="headerlink" href="#quickstart-deploy-a-python-django-or-flask-web-app-to-azure-app-service" title="Permanent link">&para;</a></h1>
+<p>In this quickstart, you'll deploy a Python web app (Django or Flask) to <a href="./overview.md#app-service-on-linux">Azure App Service</a>. Azure App Service is a fully managed web hosting service that supports Python 3.7 and higher apps hosted in a Linux server environment.</p>
+<p>To complete this quickstart, you need:
+1. An Azure account with an active subscription. <a href="https://azure.microsoft.com/free/?ref=microsoft.com&amp;utm_source=microsoft.com&amp;utm_medium=docs&amp;utm_campaign=visualstudio">Create an account for free</a>.
+1. <a href="https://www.python.org/downloads/" target="_blank">Python 3.9 or higher</a> installed locally.</p>
+<h2 id="1-sample-application">1 - Sample application<a class="headerlink" href="#1-sample-application" title="Permanent link">&para;</a></h2>
+<p>This quickstart can be completed using either Flask or Django. A sample application in each framework is provided to help you follow along with this quickstart. Download or clone the sample application to your local workstation.</p>
+<h3 id="flask">[Flask]<a class="headerlink" href="#flask" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="go">git clone https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart</span>
+</code></pre></div>
+<hr />
+<p>To run the application locally:</p>
+<h3 id="flask_1">[Flask]<a class="headerlink" href="#flask_1" title="Permanent link">&para;</a></h3>
 <ol>
-<li>algoritmos eficientes</li>
-<li>implementações eficientes</li>
-<li>paralelismo</li>
+<li>
+<p>Go to the application folder:</p>
+<div class="highlight"><pre><span></span><code><span class="go">cd msdocs-python-flask-webapp-quickstart</span>
+</code></pre></div>
+</li>
+<li>
+<p>Create a virtual environment for the app:</p>
+<p>[!INCLUDE <a href="./includes/quickstart-python/virtual-environment-setup.md">Virtual environment setup</a>]</p>
+</li>
+<li>
+<p>Install the dependencies:</p>
+<div class="highlight"><pre><span></span><code><span class="go">pip install -r requirements.txt</span>
+</code></pre></div>
+</li>
+<li>
+<p>Run the app:</p>
+<div class="highlight"><pre><span></span><code><span class="go">flask run</span>
+</code></pre></div>
+</li>
+<li>
+<p>Browse to the sample application at <code>http://localhost:5000</code> in a web browser.</p>
+<p>:::image type="content" source="./media/quickstart-python/run-flask-app-localhost.png" alt-text="Screenshot of the Flask app running locally in a browser":::</p>
+</li>
 </ol>
-<p>Na atividade de hoje vamos estudar o primeiro ponto e quantificar o efeito de algoritmos eficientes na resolução de um problema complexo. </p>
-<h2 id="problemas-estudados-em-supercomputacao">Problemas estudados em SuperComputação<a class="headerlink" href="#problemas-estudados-em-supercomputacao" title="Permanent link">&para;</a></h2>
-<p>Em Desafios de Programação conhecemos a classe dos problemas NP-completo, que são aqueles que acreditamos não existir nenhum algoritmo determinístico que os resolvem em tempo polinomial. Ou seja, são problemas importantes cuja solução é difícil. Em geral temos classes de algoritmos para resolvê-los:</p>
-<ol>
-<li>ótimos globais: algoritmo que encontra a solução "correta" do problema. </li>
-<li>ótimos locais: algoritmo que encontra uma solução "boa" e que não pode ser melhorada por pequenas modificações. </li>
-<li>aproximação: algoritmos que garantem estar "perto o suficiente" da solução ótima. Este tipo de algoritmo não nos interessa em SuperComputação.</li>
-</ol>
-<p>Iremos analisar hoje 4 executáveis que resolvem o problema do <a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Caixeiro Viajante</a>. </p>
-<ol>
-<li><code>busca-local-1</code> - implementação de um método de busca rápida, porém não ótima.</li>
-<li><code>busca-local-1-par</code> - implementação paralela do programa acima.</li>
-<li><code>busca-local-2</code> - implementação alternativa do mesmo método acima. Os resultados de ambos são idênticos.</li>
-<li><code>busca-local-2-par</code> - implementação paralela do programa acima.</li>
-</ol>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Não estamos interessados no Caixeiro Viajante em si hoje. Queremos é comparar diferentes maneiras de resolvê-lo para entendermos o papel de técnicas de SuperComputação na velocidade de processamento e nos resultados obtidos. </p>
-</div>
-<h2 id="ferramental">Ferramental<a class="headerlink" href="#ferramental" title="Permanent link">&para;</a></h2>
-<p>Realizar testes de maneira automatizada é muito importante para quantificar os efeitos de diferentes algoritmos e técnicas de paralelismo. O snippet abaixo executa </p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<p>Having issues? <a href="https://aka.ms/PythonAppServiceQuickstartFeedback">Let us know</a>.</p>
+<!-- 
 
-<div class="highlight"><pre><span></span><code>
+
+## 2 - Create a web app in Azure
+
+To host your application in Azure, you need to create Azure App Service web app in Azure. You can create a web app using the [Azure portal](https://portal.azure.com/), [VS Code](https://code.visualstudio.com/) using the [Azure Tools extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack), or the Azure CLI.
+
+### [Azure portal](#tab/azure-portal)
+
+Sign in to the [Azure portal](https://portal.azure.com/) and follow these steps to create your Azure App Service resources.
+
+| Instructions    | Screenshot |
+|:----------------|-----------:|
+| [!INCLUDE [Create app service step 1](<./includes/quickstart-python/create-app-service-azure-portal-1.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-azure-portal-1-240px.png" alt-text="A screenshot of how to use the search box in the top tool bar to find App Services in Azure." lightbox="./media/quickstart-python/create-app-service-azure-portal-1.png"::: |
+| [!INCLUDE [Create app service step 1](<./includes/quickstart-python/create-app-service-azure-portal-2.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-azure-portal-2-240px.png" alt-text="A screenshot of the location of the Create button on the App Services page in the Azure portal." lightbox="./media/quickstart-python/create-app-service-azure-portal-2.png"::: |
+| [!INCLUDE [Create app service step 1](<./includes/quickstart-python/create-app-service-azure-portal-3.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-azure-portal-3-240px.png" alt-text="A screenshot of how to fill out the form to create a new App Service in the Azure portal." lightbox="./media/quickstart-python/create-app-service-azure-portal-3.png"::: |
+| [!INCLUDE [Create app service step 1](<./includes/quickstart-python/create-app-service-azure-portal-4.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-azure-portal-4-240px.png" alt-text="A screenshot of how to select the basic app service plan in the Azure portal." lightbox="./media/quickstart-python/create-app-service-azure-portal-4.png"::: |
+| [!INCLUDE [Create app service step 1](<./includes/quickstart-python/create-app-service-azure-portal-5.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-azure-portal-5-240px.png" alt-text="A screenshot of the location of the Review plus Create button in the Azure portal." lightbox="./media/quickstart-python/create-app-service-azure-portal-5.png"::: |
+
+### [VS Code](#tab/vscode-aztools)
+
+To create Azure resources in VS Code, you must have the [Azure Tools extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) installed and be signed into Azure from VS Code.
+
+> [!div class="nextstepaction"]
+> [Download Azure Tools extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
+
+| Instructions    | Screenshot |
+|:----------------|-----------:|
+| [!INCLUDE [Create app service step 1](<./includes/quickstart-python/create-app-service-visual-studio-code-1.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-visual-studio-code-1-240px.png" alt-text="A Screenshot of the Azure Tools icon in the left toolbar of VS Code." lightbox="./media/quickstart-python/create-app-service-visual-studio-code-1.png"::: |
+| [!INCLUDE [Create app service step 2](<./includes/quickstart-python/create-app-service-visual-studio-code-2.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-visual-studio-code-2-240px.png" alt-text="A screenshot of the App Service section of Azure Tools extension and the context menu used to create a new web app." lightbox="./media/quickstart-python/create-app-service-visual-studio-code-2.png"::: |
+| [!INCLUDE [Create app service step 4](<./includes/quickstart-python/create-app-service-visual-studio-code-3.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-visual-studio-code-3-240px.png" alt-text="A screenshot of dialog box used to enter the name of the new web app in Visual Studio Code." lightbox="./media/quickstart-python/create-app-service-visual-studio-code-3.png"::: |
+| [!INCLUDE [Create app service step 5](<./includes/quickstart-python/create-app-service-visual-studio-code-4.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-visual-studio-code-4-240px.png" alt-text="A screenshot of the dialog box in VS Code used to select the runtime for the new web app." lightbox="./media/quickstart-python/create-app-service-visual-studio-code-4.png"::: |
+| [!INCLUDE [Create app service step 6](<./includes/quickstart-python/create-app-service-visual-studio-code-5.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-visual-studio-code-5-240px.png" alt-text="A screenshot of the dialog in VS Code used to select the App Service plan for the new web app." lightbox="./media/quickstart-python/create-app-service-visual-studio-code-5.png"::: |
+
+### [Azure CLI](#tab/azure-cli)
+
+[!INCLUDE [Create CLI](<./includes/quickstart-python/create-app-cli.md>)]
+
+---
+
+Having issues? [Let us know](https://aka.ms/PythonAppServiceQuickstartFeedback).
+
+## 3 - Deploy your application code to Azure
+
+Azure App service supports multiple methods to deploy your application code to Azure including support for GitHub Actions and all major CI/CD tools. This article focuses on how to deploy your code from your local workstation to Azure.
+
+### [Deploy using VS Code](#tab/vscode-deploy)
+
+To deploy a web app from VS Code, you must have the [Azure Tools extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) installed and be signed into Azure from VS Code.
+
+> [!div class="nextstepaction"]
+> [Download Azure Tools extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
+
+| Instructions    | Screenshot |
+|:----------------|-----------:|
+| [!INCLUDE [VS Code deploy step 1](<./includes/quickstart-python/deploy-visual-studio-code-1.md>)] | :::image type="content" source="./media/quickstart-python/deploy-visual-studio-code-1-240px.png" alt-text="A screenshot of the location of the Azure Tools icon in the left toolbar of VS Code." lightbox="./media/quickstart-python/deploy-visual-studio-code-1.png"::: |
+| [!INCLUDE [VS Code deploy step 2](<./includes/quickstart-python/deploy-visual-studio-code-2.md>)] | :::image type="content" source="./media/quickstart-python/deploy-visual-studio-code-2-240px.png" alt-text="A screenshot of the context menu of an App Service and the deploy to web app menu option." lightbox="./media/quickstart-python/deploy-visual-studio-code-2.png"::: |
+| [!INCLUDE [VS Code deploy step 3](<./includes/quickstart-python/deploy-visual-studio-code-3.md>)] | :::image type="content" source="./media/quickstart-python/deploy-visual-studio-code-3-240px.png" alt-text="A screenshot dialog in VS Code used to choose the app to deploy." lightbox="./media/quickstart-python/deploy-visual-studio-code-3.png"::: |
+| [!INCLUDE [VS Code deploy step 4](<./includes/quickstart-python/deploy-visual-studio-code-4.md>)] | :::image type="content" source="./media/quickstart-python/deploy-visual-studio-code-4-240px.png" alt-text="A screenshot of a dialog box in VS Code asking if you want to update your workspace to run build commands." lightbox="./media/quickstart-python/deploy-visual-studio-code-4.png"::: |
+| [!INCLUDE [VS Code deploy step 5](<./includes/quickstart-python/deploy-visual-studio-code-5.md>)] | :::image type="content" source="./media/quickstart-python/deploy-visual-studio-code-5-240px.png" alt-text="A screenshot showing the confirmation dialog when the app code has been deployed to Azure." lightbox="./media/quickstart-python/deploy-visual-studio-code-5.png"::: |
+
+### [Deploy using Azure CLI](#tab/azure-cli-deploy)
+
+[!INCLUDE [Deploy Azure CLI](<./includes/quickstart-python/deploy-cli.md>)]
+
+### [Deploy using Local Git](#tab/local-git-deploy)
+
+[!INCLUDE [Deploy Local Git](<./includes/quickstart-python/deploy-local-git.md>)]
+
+### [Deploy using a ZIP file](#tab/zip-deploy)
+
+[!INCLUDE [Deploy using ZIP file](<./includes/quickstart-python/deploy-zip-file.md>)]
+
+---
+
+Having issues? Refer first to the [Troubleshooting guide](./configure-language-python.md#troubleshooting), otherwise, [let us know](https://aka.ms/PythonAppServiceQuickstartFeedback).
+
+## 4 - Browse to the app
+
+Browse to the deployed application in your web browser at the URL `http://<app-name>.azurewebsites.net`. If you see a default app page, wait a minute and refresh the browser.
+
+The Python sample code is running a Linux container in App Service using a built-in image.
+
+:::image type="content" source="./media/quickstart-python/run-app-azure.png" alt-text="Screenshot of the app running in Azure":::
+
+**Congratulations!** You've deployed your Python app to App Service.
+
+Having issues? Refer first to the [Troubleshooting guide](./configure-language-python.md#troubleshooting), otherwise, [let us know](https://aka.ms/PythonAppServiceQuickstartFeedback).
+
+## 5 - Stream logs
+
+Azure App Service captures all messages output to the console to assist you in diagnosing issues with your application. The sample apps include `print()` statements to demonstrate this capability.
+
+### [Flask](#tab/flask)
+
+:::code language="python" source="~/msdocs-python-flask-webapp-quickstart/app.py" range="6-21" highlight="3,12,15":::
+
+### [Django](#tab/django)
+
+:::code language="python" source="~/msdocs-python-django-webapp-quickstart/hello_azure/views.py" range="5-21" highlight="2,11,14":::
+
+---
+
+The contents of the App Service diagnostic logs can be reviewed in the Azure portal, VS Code, or using the Azure CLI.
+
+### [Azure portal](#tab/azure-portal)
+
+| Instructions    | Screenshot |
+|:----------------|-----------:|
+| [!INCLUDE [Stream logs from Azure portal 1](<./includes/quickstart-python/stream-logs-azure-portal-1.md>)] | :::image type="content" source="./media/quickstart-python/stream-logs-azure-portal-1-240px.png" alt-text="A screenshot of the location in the Azure portal where to enable streaming logs." lightbox="./media/quickstart-python/stream-logs-azure-portal-1.png"::: |
+| [!INCLUDE [Stream logs from Azure portal 2](<./includes/quickstart-python/stream-logs-azure-portal-2.md>)] | :::image type="content" source="./media/quickstart-python/stream-logs-azure-portal-2-240px.png" alt-text="A screenshot of how to view logs in the Azure portal." lightbox="./media/quickstart-python/stream-logs-azure-portal-2.png"::: |
+
+### [VS Code](#tab/vscode-aztools)
+
+| Instructions    | Screenshot |
+|:----------------|-----------:|
+| [!INCLUDE [Stream logs from VS Code 1](<./includes/quickstart-python/stream-logs-visual-studio-code-1.md>)] | :::image type="content" source="./media/quickstart-python/stream-logs-vs-code-1-240px.png" alt-text="A screenshot of how to start streaming logs with the VS Code extension." lightbox="./media/quickstart-python/stream-logs-vs-code-1.png"::: |
+| [!INCLUDE [Stream logs from VS Code 2](<./includes/quickstart-python/stream-logs-visual-studio-code-2.md>)] | :::image type="content" source="./media/quickstart-python/stream-logs-vs-code-2-240px.png" alt-text="A screenshot of an example of streaming logs in the VS Code Output window." lightbox="./media/quickstart-python/stream-logs-vs-code-2.png"::: |
+
+### [Azure CLI](#tab/azure-cli)
+
+First, you need to configure Azure App Service to output logs to the App Service filesystem using the [az webapp log config](/cli/azure/webapp/log#az-webapp-log-config) command.
+
+[!INCLUDE [CLI stream logs configure](<./includes/quickstart-python/stream-logs-cli-1.md>)]
+
+To stream logs, use the [az webapp log tail](/cli/azure/webapp/log#az-webapp-log-tail) command.
+
+[!INCLUDE [CLI stream logs tail](<./includes/quickstart-python/stream-logs-cli-2.md>)]
+
+Refresh the home page in the app or attempt other requests to generate some log messages. The output should look similar to the following.
+
+<div class="highlight"><pre><span></span><code><span class="go">Starting Live Log Stream ---</span>
+
+<span class="go">2021-12-23T02:15:52.740703322Z Request for index page received</span>
+<span class="go">2021-12-23T02:15:52.740740222Z 169.254.130.1 - - [23/Dec/2021:02:15:52 +0000] &quot;GET / HTTP/1.1&quot; 200 1360 &quot;https://msdocs-python-webapp-quickstart-123.azurewebsites.net/hello&quot; &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0&quot;</span>
+<span class="go">2021-12-23T02:15:52.841043070Z 169.254.130.1 - - [23/Dec/2021:02:15:52 +0000] &quot;GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1&quot; 200 0 &quot;https://msdocs-python-webapp-quickstart-123.azurewebsites.net/&quot; &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0&quot;</span>
+<span class="go">2021-12-23T02:15:52.884541951Z 169.254.130.1 - - [23/Dec/2021:02:15:52 +0000] &quot;GET /static/images/azure-icon.svg HTTP/1.1&quot; 200 0 &quot;https://msdocs-python-webapp-quickstart-123.azurewebsites.net/&quot; &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0&quot;</span>
+<span class="go">2021-12-23T02:15:53.043211176Z 169.254.130.1 - - [23/Dec/2021:02:15:53 +0000] &quot;GET /favicon.ico HTTP/1.1&quot; 404 232 &quot;https://msdocs-python-webapp-quickstart-123.azurewebsites.net/&quot; &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0&quot;</span>
+
+<span class="go">2021-12-23T02:16:01.304306845Z Request for hello page received with name=David</span>
+<span class="go">2021-12-23T02:16:01.304335945Z 169.254.130.1 - - [23/Dec/2021:02:16:01 +0000] &quot;POST /hello HTTP/1.1&quot; 200 695 &quot;https://msdocs-python-webapp-quickstart-123.azurewebsites.net/&quot; &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0&quot;</span>
+<span class="go">2021-12-23T02:16:01.398399251Z 169.254.130.1 - - [23/Dec/2021:02:16:01 +0000] &quot;GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1&quot; 304 0 &quot;https://msdocs-python-webapp-quickstart-123.azurewebsites.net/hello&quot; &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0&quot;</span>
+<span class="go">2021-12-23T02:16:01.430740060Z 169.254.130.1 - - [23/Dec/2021:02:16:01 +0000] &quot;GET /static/images/azure-icon.svg HTTP/1.1&quot; 304 0 &quot;https://msdocs-python-webapp-quickstart-123.azurewebsites.net/hello&quot; &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0&quot;</span>
 </code></pre></div>
 
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html"></div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered celltag_outputPrepend">
-<div class="input">
+---
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">subprocess</span>
-<span class="kn">import</span> <span class="nn">time</span>
+Having issues? Refer first to the [Troubleshooting guide](./configure-language-python.md#troubleshooting), otherwise, [let us know](https://aka.ms/PythonAppServiceQuickstartFeedback).
 
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;entradas-busca-local/in-0.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">perf_counter</span><span class="p">()</span>
-    <span class="n">proc</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="s1">&#39;./busca-local-1&#39;</span><span class="p">],</span> <span class="nb">input</span><span class="o">=</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">text</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">capture_output</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">perf_counter</span><span class="p">()</span>
+## Clean up resources
 
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Saída:&#39;</span><span class="p">,</span> <span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Stderr:&#39;</span><span class="p">,</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tempo total(s):&#39;</span><span class="p">,</span> <span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="p">)</span>
+When you're finished with the sample app, you can remove all of the resources for the app from Azure. It will not incur extra charges and keep your Azure subscription uncluttered. Removing the resource group also removes all resources in the resource group and is the fastest way to remove all Azure resources for your app.
+
+### [Azure portal](#tab/azure-portal)
+
+Follow these steps while signed-in to the Azure portal to delete a resource group.
+
+| Instructions    | Screenshot |
+|:----------------|-----------:|
+| [!INCLUDE [Remove resource group Azure portal 1](<./includes/quickstart-python/remove-resource-group-azure-portal-1.md>)] | :::image type="content" source="./media/quickstart-python/remove-resource-group-azure-portal-1-240px.png" alt-text="A screenshot of how to search for and navigate to a resource group in the Azure portal." lightbox="./media/quickstart-python/remove-resource-group-azure-portal-1.png"::: |
+| [!INCLUDE [Remove resource group Azure portal 2](<./includes/quickstart-python/remove-resource-group-azure-portal-2.md>)] | :::image type="content" source="./media/quickstart-python/remove-resource-group-azure-portal-2-240px.png" alt-text="A screenshot of the location of the Delete Resource Group button in the Azure portal." lightbox="./media/quickstart-python/remove-resource-group-azure-portal-2.png"::: |
+| [!INCLUDE [Remove resource group Azure portal 3](<./includes/quickstart-python/remove-resource-group-azure-portal-3.md>)] | :::image type="content" source="./media/quickstart-python/remove-resource-group-azure-portal-3-240px.png" alt-text="A screenshot of the confirmation dialog for deleting a resource group in the Azure portal." lightbox="./media/quickstart-python/remove-resource-group-azure-portal-3.png"::: |
+
+### [VS Code](#tab/vscode-aztools)
+
+| Instructions    | Screenshot |
+|:----------------|-----------:|
+| [!INCLUDE [Remove resource group VS Code 1](<./includes/quickstart-python/remove-resource-group-visual-studio-code-1.md>)] | :::image type="content" source="./media/quickstart-python/remove-resource-group-visual-studio-code-1-240px.png" alt-text="A screenshot of how to delete a resource group in VS Code using the Azure Tools extension." lightbox="./media/quickstart-python/remove-resource-group-visual-studio-code-1.png"::: |
+| [!INCLUDE [Remove resource group VS Code 2](<./includes/quickstart-python/remove-resource-group-visual-studio-code-2.md>)] | :::image type="content" source="./media/quickstart-python/remove-resource-group-visual-studio-code-2-240px.png" alt-text="A screenshot of the confirmation dialog for deleting a resource group from VS Code." lightbox="./media/quickstart-python/remove-resource-group-visual-studio-code-2.png"::: |
+
+### [Azure CLI](#tab/azure-cli)
+
+Delete the resource group by using the [az group delete](/cli/azure/group#az-group-delete) command.
+
+<div class="highlight"><pre><span></span><code>az group delete \
+    --name msdocs-python-webapp-quickstart \
+    --no-wait
 </code></pre></div>
 
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Vamos agora praticar usar este snippet para executar nossos testes automaticamente. </p>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<p>Crie uma função <code>roda_com_entrada(executavel, arquivo_in)</code> que roda o primeiro argumento usando como entrada o conteúdo do segundo argumento. Teste seu código com o executável <code>busca-local-1</code> e com o arquivo de entrada <code>in-0.txt</code> usado no exemplo acima.</p>
-<p>Sua função deverá devolver uma tupla <code>(stdout,time)</code> com <code>stdout</code> sendo a saída do programa e <code>time</code> seu tempo de execução em segundos. </p>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+The `--no-wait` argument allows the command to return before the operation is complete.
 
-<div class="highlight"><pre><span></span><code><span class="c1"># TODO: exercício aqui</span>
-</code></pre></div>
+---
 
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="algoritmos-sequenciais">Algoritmos sequenciais<a class="headerlink" href="#algoritmos-sequenciais" title="Permanent link">&para;</a></h2>
-<p>Com esse código, vamos criar um relatório interativo que roda nossos testes automaticamente e já plota informações prontas para nossas análises. Vamos começar examinando o desempenho do executável <code>busca-local-1</code>.</p>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<p>Rode o <code>busca-local</code> com os arquivos de entrada na pasta <code>entradas-busca-local</code>. Guarde os tempos em uma lista.</p>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<p>Leia o tamanho das entradas dos arquivos  na pasta <code>entradas-busca-local</code> e guarde em uma segunda lista.</p>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<p>Plote o tempo de execução pelo tamanho da entrada usando <code>matplotlib</code></p>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+Having issues? [Let us know](https://aka.ms/PythonAppServiceQuickstartFeedback).
 
-<div class="highlight"><pre><span></span><code><span class="c1"># TODO: exercício aqui</span>
-</code></pre></div>
+## Next steps
 
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<p>Repita os três passos acima para o executável <code>busca-local-2</code>. Finalize plotando os tempos de execução de ambos os executáveis no mesmo gráfico.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+> [!div class="nextstepaction"]
+> [Tutorial: Python (Django) web app with PostgreSQL](./tutorial-python-postgresql-app.md)
 
-<div class="highlight"><pre><span></span><code><span class="c1">#TODO: seu código aqui</span>
-</code></pre></div>
+> [!div class="nextstepaction"]
+> [Configure Python app](./configure-language-python.md)
 
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<p>Segundo uma coleta de dados informal e altamente confiável, 93,17% dos alunos não colocam legendas nem títulos nos gráficos gerados. Faça isso agora. </p>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="admonition question medium">
-<p class="admonition-title">Question</p>
-<p>Interprete o gráfico que você gerou na linha de cima. </p>
-</div>
-<div class="admonition question medium">
-<p class="admonition-title">Question</p>
-<p>Compare manualmente a saída dos programas. Existe diferença em seus resultados?</p>
-</div>
-<div class="admonition question medium">
-<p class="admonition-title">Question</p>
-<p>Resgate seus conhecimentos de Desafios de Programação e explique a diferença entre os algoritmos.</p>
-</div>
-<h2 id="algoritmos-paralelos">Algoritmos paralelos<a class="headerlink" href="#algoritmos-paralelos" title="Permanent link">&para;</a></h2>
-<p>Na discussão inicial da expositiva chegamos à conclusão de que se conseguimos realizar <em>N</em> operações em paralelo teremos um ganho de no máximo <em>N</em> vezes no desempenho de nosso programa. Nesta parte iremos estudar esta afirmação usando implementações paralelas dos algoritmos da seção anterior. </p>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<p>Execute os algoritmos paralelos com as mesmas entradas e compare com suas versões paralelas. Use um gráfico para facilitar as comparações</p>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+> [!div class="nextstepaction"]
+> [Add user sign-in to a Python web app](../active-directory/develop/quickstart-v2-python-webapp.md)
 
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="admonition question medium">
-<p class="admonition-title">Question</p>
-<p>Compare os tempos obtidos. Qual foi o ganho médio? Quantos <em>núcleos</em> a máquina que você está usando possui? Responda comparando cada algoritmo sequencial com sua versão paralela.</p>
-</div>
-<p>Já estabelecemos que <code>busca-local-2</code> é melhor que <code>busca-local-1</code> por ser utilizar um algoritmo mais eficiente e vimos na prática a diferença entre um algoritmo <span class="arithmatex"><span class="MathJax_Preview">O(n^3)</span><script type="math/tex">O(n^3)</script></span> e um algoritmo <span class="arithmatex"><span class="MathJax_Preview">O(n^2)</span><script type="math/tex">O(n^2)</script></span>. Vamos agora examinar a seguinte questão.</p>
-<div class="admonition cite">
-<p class="admonition-title">É possível usar paralelismo para tornar <code>busca-local-1-par</code> melhor que <code>busca-local-2</code>?</p>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<p>Compare o desempenho de <code>busca-local-1-par</code> com <code>busca-local-2</code>. Faça um gráfico</p>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="admonition question medium">
-<p class="admonition-title">Question</p>
-<p>Com base em seu gráfico acima, responda a pergunta: "É possível usar paralelismo para tornar busca-local-1-par melhor que busca-local-2?"</p>
-</div>
-<p>Vamos agora generalizar a pergunta:</p>
-<div class="admonition question medium">
-<p class="admonition-title">Question</p>
-<p>Dados dois algoritmos com complexidades computacionais diferentes, sendo que o primeiro é inferior ao segundo. É possível usar paralelismo para tornar o primeiro mais rápido que o segundo para todos tamanhos de entrada? Assuma que você possui um número fixo de <em>núcleos</em>. </p>
-</div>
-</div>
-</div>
-</div>
+> [!div class="nextstepaction"]
+> [Tutorial: Run Python app in custom container](./tutorial-custom-container.md) -->
 
               
             </article>
@@ -786,41 +714,6 @@
       </main>
       
         <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../../sobre/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Burocracias" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Burocracias
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../02-03-implementacao-c%2B%2B/" class="md-footer__link md-footer__link--next" aria-label="Next: 02 e 03 - C++" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              02 e 03 - C++
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
