@@ -1,33 +1,28 @@
-# SuperComputação
+# Aula complementar Azure
 
-Bem vindo ao curso de SuperComputação 2022/1. 
+## Bem vindo ao curso de Conceitos básicos de Nuvem com Azure. 
 
-* **Professores**: 
-    * André Filipe M. Batista
-    * Luciano Silva
+* **Professor**: 
+    * Tiago Demay
 
 * **Horário das aulas**:
-    * Turma A - Prof. André Filipe:  Terça - 9h45, Sexta - 07h30
-    * Turma B - Prof. Luciano Silva:  Quarta - 13h30, Sexta - 13h30
+    * Segunda - 18h - 20h  18/04/2022
+    * Terca   - 18h - 20h  19/04/2022
+    * Quarta  - 18h - 20h  20/04/2022
 
 
-## Avaliação
+### Ao final da atividade o aluno será capaz de:
+Compreender a utilizacao da CSM (Cloud Service Management) Azure;
+Entender conceitos de computação em nuvem;
+Compreender os recursos de computacao em nuvem;
+Criar uma aplicação Web Python - FLASK;
+Modificar aplicações já criadas.
 
-A avaliação da disciplina será composta por provas, projetos e atividades de acompanhamentos:
 
-* Provas Intermediária (PI) e Final (PF) serão compostas por exercícios práticos a serem feitos durante o tempo de prova;
-* O projeto da disciplina será composto por múltiplas partes. [Mais detalhes na página de projetos](projetos)
+### Objetivo: 
 
-A média final é dada por 
+Apresentar os conceitos de computacao em nuvem utilizando a CSM (Azure), entregando ao Aluno uma conta Azure e mostrando os passos iniciais.
 
-* 55% Projeto
-* 45% média de Provas
+## A Prova final é individual
 
-!!! warning "Condições de barreira"
-    * Média de provas >= 4,5
-    * PI, PF >= 4,0
-    * Projeto >= 5 (não serão aceitos projetos atrasados)
-
-    Caso estas condições não sejam cumpridas ver detalhes na [aula 01](aulas/01-introducao/slides.pdf)
-
-!!! failure "Mesmo que todas as condições acima sejam satisfeitas é possível reprovar. Um desempenho abaixo do esperado em uma atividade precisa ser compensado com um desempenho melhor em outra atividade."
+* !!! failure "Brincadeira....... aqui não tem Prova!!!!!!!!!!"

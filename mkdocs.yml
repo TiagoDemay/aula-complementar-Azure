@@ -33,19 +33,14 @@ nav:
     - Burocracias: sobre.md
 
     - Aulas:
-        - "01 - Introdução": aulas/01-introducao/index.ipynb
-        - "02 e 03 - C++": aulas/02-03-implementacao-c++/index.md
-        - "04 - Profiling": aulas/04-profiling/index.md
-        - "05 - Heurísticas": aulas/05-heuristicas/index.md
-        - "06 - Aleatorização": aulas/06-aleatorizacao/index.md
-        - "07 - Busca Local": aulas/07-busca-local/index.md
-        - "08 - Busca Exaustiva": aulas/08-busca-global/index.md
-        - "09 - Comparação de desempenho": aulas/09-busca-global-II/index.md
+        - "01 - Introdução":     aulas/01/index.md
+        - "02 - Implementando":  aulas/02/index.md
+        - "03 - Modificando":    aulas/03/index.md
 
     - Projeto:
         - projetos/index.md
-        - projetos/heuristico.md
-        - projetos/local.md
+        # - projetos/heuristico.md
+        # - projetos/local.md
 
 
 extra_javascript:
