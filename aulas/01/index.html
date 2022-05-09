@@ -352,8 +352,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#linkprincipal" class="md-nav__link">
-    LINKprincipal
+  <a href="#link-principal" class="md-nav__link">
+    Link-principal
   </a>
   
 </li>
@@ -530,8 +530,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#linkprincipal" class="md-nav__link">
-    LINKprincipal
+  <a href="#link-principal" class="md-nav__link">
+    Link-principal
   </a>
   
 </li>
@@ -631,66 +631,23 @@ m 2010 , a Mirosoft lançou o Microsoft Azure e, nos anos seguintes, quase todo 
 <p><a href="https://azure.microsoft.com/en-us/free/">link1</a>
 <a href="https://azure.microsoft.com/en-us/free/students/">link2</a>
 <a href="https://www.microsoftazuresponsorships.com/Balance">link3</a></p>
-<h3 id="linkprincipal"><a href="https://azure.microsoft.com/en-us/offers/ms-azr-0170p/">LINKprincipal</a><a class="headerlink" href="#linkprincipal" title="Permanent link">&para;</a></h3>
+<h3 id="link-principal"><a href="https://azure.microsoft.com/en-us/offers/ms-azr-0170p/">Link-principal</a><a class="headerlink" href="#link-principal" title="Permanent link">&para;</a></h3>
 <h2 id="azure-para-estudantes">Azure para estudantes<a class="headerlink" href="#azure-para-estudantes" title="Permanent link">&para;</a></h2>
 <p>O Azure for Students permite que você comece com USD 100 em créditos do Azure para serem usados ​​nos primeiros 12 meses, além de alguns serviços gratuitos conforme descrito abaixo (serviços sujeitos a alterações) sem a necessidade de um cartão de crédito na inscrição. </p>
 <p>Aplique aqui -&gt; <a href="https://signup.azure.com/studentverification?offerType=1&amp;correlationId=8abd48e0a9074fa18618e482a98ca754">link</a></p>
 <h1 id="quickstart-create-a-linux-virtual-machine-in-the-azure-portal">Quickstart: Create a Linux virtual machine in the Azure portal<a class="headerlink" href="#quickstart-create-a-linux-virtual-machine-in-the-azure-portal" title="Permanent link">&para;</a></h1>
 <h2 id="sign-in-to-azure">Sign in to Azure<a class="headerlink" href="#sign-in-to-azure" title="Permanent link">&para;</a></h2>
 <p>Sign in to the <a href="https://portal.azure.com">Azure portal</a>.</p>
-<h2 id="create-virtual-machine">Create virtual machine<a class="headerlink" href="#create-virtual-machine" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Type <strong>virtual machines</strong> in the search.</li>
-<li>Under <strong>Services</strong>, select <strong>Virtual machines</strong>.</li>
-<li>
-<p>In the <strong>Virtual machines</strong> page, select <strong>Create</strong> and then <strong>Virtual machine</strong>.  The <strong>Create a virtual machine</strong> page opens.</p>
-</li>
-<li>
-<p>In the <strong>Basics</strong> tab, under <strong>Project details</strong>, make sure the correct subscription is selected and then choose to <strong>Create new</strong> resource group. Type <em>myResourceGroup</em> for the name.*. </p>
-<p><img alt="Screenshot of the Project details section showing where you select the Azure subscription and the resource group for the virtual machine" src="./media/quick-create-portal/project-details.png" /></p>
-</li>
-<li>
-<p>Under <strong>Instance details</strong>, type <em>myVM</em> for the <strong>Virtual machine name</strong>, and choose <em>Ubuntu 18.04 LTS - Gen2</em> for your <strong>Image</strong>. Leave the other defaults. The default size and pricing is only shown as an example. Size availability and pricing are dependent on your region and subscription.</p>
-<p>:::image type="content" source="media/quick-create-portal/instance-details.png" alt-text="Screenshot of the Instance details section where you provide a name for the virtual machine and select its region, image, and size.":::</p>
-<blockquote>
-<p>[!NOTE]
-Some users will now see the option to create VMs in multiple zones. To learn more about this new capability, see <a href="../create-portal-availability-zone.md">Create virtual machines in an availability zone</a>.
-:::image type="content" source="../media/create-portal-availability-zone/preview.png" alt-text="Screenshot showing that you have the option to create virtual machines in multiple availability zones.":::</p>
-</blockquote>
-</li>
-<li>
-<p>Under <strong>Administrator account</strong>, select <strong>SSH public key</strong>.</p>
-</li>
-<li>
-<p>In <strong>Username</strong> type <em>azureuser</em>.</p>
-</li>
-<li>
-<p>For <strong>SSH public key source</strong>, leave the default of <strong>Generate new key pair</strong>, and then type <em>myKey</em> for the <strong>Key pair name</strong>.</p>
-<p><img alt="Screenshot of the Administrator account section where you select an authentication type and provide the administrator credentials" src="./media/quick-create-portal/administrator-account.png" /></p>
-</li>
-<li>
-<p>Under <strong>Inbound port rules</strong> &gt; <strong>Public inbound ports</strong>, choose <strong>Allow selected ports</strong> and then select <strong>SSH (22)</strong> and <strong>HTTP (80)</strong> from the drop-down. </p>
-<p><img alt="Screenshot of the inbound port rules section where you select what ports inbound connections are allowed on" src="./media/quick-create-portal/inbound-port-rules.png" /></p>
-</li>
-<li>
-<p>Leave the remaining defaults and then select the <strong>Review + create</strong> button at the bottom of the page.</p>
-</li>
-<li>
-<p>On the <strong>Create a virtual machine</strong> page, you can see the details about the VM you are about to create. When you are ready, select <strong>Create</strong>.</p>
-</li>
-<li>
-<p>When the <strong>Generate new key pair</strong> window opens, select <strong>Download private key and create resource</strong>. Your key file will be download as <strong>myKey.pem</strong>. Make sure you know where the <code>.pem</code> file was downloaded, you will need the path to it in the next step.</p>
-</li>
-<li>
-<p>When the deployment is finished, select <strong>Go to resource</strong>.</p>
-</li>
-<li>
-<p>On the page for your new VM, select the public IP address and copy it to your clipboard.</p>
-<p><img alt="Screenshot showing how to copy the IP address for the virtual machine" src="./media/quick-create-portal/ip-address.png" /></p>
-</li>
-</ol>
-<p>[!INCLUDE <a href="../../../includes/ephemeral-ip-note.md">ephemeral-ip-note.md</a>]</p>
-<h2 id="connect-to-virtual-machine">Connect to virtual machine<a class="headerlink" href="#connect-to-virtual-machine" title="Permanent link">&para;</a></h2>
+<h2 id="criando-a-primeira-maquina-virtual-na-azure">Criando a primeira maquina virtual na Azure<a class="headerlink" href="#criando-a-primeira-maquina-virtual-na-azure" title="Permanent link">&para;</a></h2>
+<p><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal#create-virtual-machine">link-da-documentacao-oficial</a></p>
+<ul>
+<li>Utilizar a subscription de Aluno</li>
+<li>Criar Resource Group</li>
+<li>Subir uma Maquina Virtual Windows</li>
+<li>Subir uma Maquina Virtual Linux</li>
+<li>Acessar ambas via RDP e SSH.</li>
+</ul>
+<h2 id="seguir-as-informacoes-em-connect-to-virtual-machine">Seguir as informacões em: Connect to virtual machine<a class="headerlink" href="#seguir-as-informacoes-em-connect-to-virtual-machine" title="Permanent link">&para;</a></h2>
 <p>Create an SSH connection with the VM.</p>
 <ol>
 <li>
@@ -700,21 +657,8 @@ Some users will now see the option to create VMs in multiple zones. To learn mor
 <p>At your prompt, open an SSH connection to your virtual machine. Replace the IP address with the one from your VM, and replace the path to the <code>.pem</code> with the path to where the key file was downloaded.</p>
 </li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="go">ssh -i .\Downloads\myKey1.pem azureuser@10.111.12.123</span>
+<div class="highlight"><pre><span></span><code><span class="go">ssh -i .\Downloads\myKey1.pem azureuser@&lt;IP-publico-do-servidor&gt;</span>
 </code></pre></div>
-<blockquote>
-<p>[!TIP]
-The SSH key you created can be used the next time your create a VM in Azure. Just select the <strong>Use a key stored in Azure</strong> for <strong>SSH public key source</strong> the next time you create a VM. You already have the private key on your computer, so you won't need to download anything.</p>
-</blockquote>
-<h2 id="install-web-server">Install web server<a class="headerlink" href="#install-web-server" title="Permanent link">&para;</a></h2>
-<p>To see your VM in action, install the NGINX web server. From your SSH session, update your package sources and then install the latest NGINX package.</p>
-<div class="highlight"><pre><span></span><code>sudo apt-get -y update
-sudo apt-get -y install nginx
-</code></pre></div>
-<p>When done, type <code>exit</code> to leave the SSH session.</p>
-<h2 id="view-the-web-server-in-action">View the web server in action<a class="headerlink" href="#view-the-web-server-in-action" title="Permanent link">&para;</a></h2>
-<p>Use a web browser of your choice to view the default NGINX welcome page. Type the public IP address of the VM as the web address. The public IP address can be found on the VM overview page or as part of the SSH connection string you used earlier.</p>
-<p><img alt="Screenshot showing the NGINX default site in a browser" src="./media/quick-create-portal/nginx.png" /></p>
 <h2 id="clean-up-resources">Clean up resources<a class="headerlink" href="#clean-up-resources" title="Permanent link">&para;</a></h2>
 <p>When no longer needed, you can delete the resource group, virtual machine, and all related resources. To do so, select the resource group for the virtual machine, select <strong>Delete</strong>, then confirm the name of the resource group to delete.</p>
 
