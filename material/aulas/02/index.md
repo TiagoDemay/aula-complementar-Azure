@@ -2,14 +2,6 @@
 
 
 
-Microsoft Azure: Cloud Computing Services https://azure.microsoft.com/en-us/free/
-
-
-https://azure.microsoft.com/en-us/offers/ms-azr-0170p/
-
-
-
-
 # Quickstart: Deploy a Python Flask web app to Azure App Service
 
 
