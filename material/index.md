@@ -6,7 +6,7 @@
     * Tiago Demay
 
 * **Horário das aulas**:
-    * Segunda - 18h - 20h  18/04/2022
+    * Segunda - 18h - 19h  18/04/2022
     * Terca   - 18h - 20h  19/04/2022
     * Quarta  - 18h - 20h  20/04/2022
 
