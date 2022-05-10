@@ -435,11 +435,75 @@
 <p>É possivel aprender muito com a documentacao oficial da própria Microsoft.</p>
 <p>A Documentacão é bem completa e possui diversos exemplos e tutoriais.</p>
 <p><a href="https://docs.microsoft.com/pt-br/">Link-da-documentacao</a></p>
+<h1 id="instalar-a-cli-do-azure">Instalar a CLI do Azure<a class="headerlink" href="#instalar-a-cli-do-azure" title="Permanent link">&para;</a></h1>
+<h2 id="seguir-os-passos-da-documentacao">Seguir os passos da documentacao...<a class="headerlink" href="#seguir-os-passos-da-documentacao" title="Permanent link">&para;</a></h2>
+<p><a href="https://docs.microsoft.com/pt-br/cli/azure/install-azure-cli">CLI-do Azure</a></p>
+<h2 id="using-azure-powershell-in-docker">Using Azure PowerShell in Docker<a class="headerlink" href="#using-azure-powershell-in-docker" title="Permanent link">&para;</a></h2>
+<p>We are publishing Docker images with Azure PowerShell preinstalled. This article shows you how to
+get started using Azure PowerShell in the Docker container.</p>
+<h3 id="finding-available-images">Finding available images<a class="headerlink" href="#finding-available-images" title="Permanent link">&para;</a></h3>
+<p>The released images require Docker 17.05 or newer. It is also expected that you are able to run
+Docker without <code>sudo</code> or local administrative rights. Please follow Docker's official
+[instructions][install] to install <code>docker</code> correctly.</p>
+<p>The latest container image contains the latest version of PowerShell and the latest Azure PowerShell
+modules supported with the Az module.</p>
+<p>For each new release of the Az module we are releasing an image for the following operating systems:</p>
+<ul>
+<li>Ubuntu 18.04 (default)</li>
+<li>Debian 9</li>
+<li>CentOS 7</li>
+</ul>
+<p>A full list of available images can be found on our [Docker image][az image] page.</p>
+<h3 id="using-azure-powershell-in-a-container">Using Azure PowerShell in a container<a class="headerlink" href="#using-azure-powershell-in-a-container" title="Permanent link">&para;</a></h3>
+<p>The following steps show the Docker commands required to download the image and start an interactive
+PowerShell session.</p>
+<ol>
+<li>Download the latest azure-powershell image.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="go">docker pull mcr.microsoft.com/azure-powershell</span>
+</code></pre></div>
+<ol>
+<li>Run the azure-powershell container in interactive mode:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="go">docker run -it mcr.microsoft.com/azure-powershell pwsh</span>
+</code></pre></div>
+<p>For Windows Docker hosts, you must enable Docker file sharing to allow local drives on Windows to be
+shared with Linux containers. For more information see
+[Get started with Docker for Windows][file-sharing].</p>
+<h3 id="remove-the-image-when-no-longer-needed">Remove the image when no longer needed<a class="headerlink" href="#remove-the-image-when-no-longer-needed" title="Permanent link">&para;</a></h3>
+<p>The following command is used to delete the Docker container when you no longer need it.</p>
+<div class="highlight"><pre><span></span><code><span class="go">docker rmi mcr.microsoft.com/azure-powershell</span>
+</code></pre></div>
+<h1 id="criar-uma-instancia-com-o-cli-da-azure">Criar uma Instancia com o CLI da Azure<a class="headerlink" href="#criar-uma-instancia-com-o-cli-da-azure" title="Permanent link">&para;</a></h1>
+<p>Vamos utilizar a ferramenta Cli atrelado ao Web Browser, fica mais rapido para demonstrar, porem para utilizacao, recomendo instalar a CLI na maquina de trabalho.</p>
+<p>Este link leva direto para um Container com as configuracoes ja feitas e as ferramentas já instaladas.
+<a href="https://portal.azure.com/#cloudshell/">Cloud-shell</a></p>
+<p>Antes de abrir irá perguntar BASH ou PowerShell..... escolher BASH</p>
+<p><a href="https://docs.microsoft.com/pt-br/azure/cloud-shell/quickstart#code-try-0">Documentacao-quick-start</a></p>
+<div class="highlight"><pre><span></span><code><span class="go">az account list</span>
+<span class="go">az account set --subscription &#39;my-subscription-name&#39;</span>
+<span class="go">az account set --subscription &#39;Azure for Students&#39;</span>
+<span class="go">az group create --location westus --name MyRG</span>
+<span class="go">az vm create -n myVM -g MyRG --image UbuntuLTS --generate-ssh-keys</span>
+</code></pre></div>
+<p>Vamos até o Portal da AZure e verificar que o Resorce Group foi criado e a Instancia está sendo iniciada.
+Aguardar a maquina ficar Ready.</p>
+<p>Vamos conectar nela agora... VIA SSH (seguir o LINK da documentacao)</p>
 <h1 id="quickstart-deploy-a-python-flask-web-app-to-azure-app-service">Quickstart: Deploy a Python Flask web app to Azure App Service<a class="headerlink" href="#quickstart-deploy-a-python-flask-web-app-to-azure-app-service" title="Permanent link">&para;</a></h1>
 <h2 id="1-sample-application">1 - Sample application<a class="headerlink" href="#1-sample-application" title="Permanent link">&para;</a></h2>
 <p>This quickstart can be completed using either Flask or Django. A sample application in each framework is provided to help you follow along with this quickstart. Download or clone the sample application to your local workstation.</p>
 <h3 id="flask">[Flask]<a class="headerlink" href="#flask" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="go">git clone https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart</span>
+<div class="highlight"><pre><span></span><code><span class="go">sudo apt update</span>
+
+<span class="go">sudo apt install python3-dev</span>
+
+<span class="go">sudo apt install python3-venv</span>
+
+<span class="go">git clone https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart</span>
+
+<span class="go">python3 -m venv .venv</span>
+
+<span class="go">source .venv/bin/activate</span>
 </code></pre></div>
 <hr />
 <p>To run the application locally:</p>
@@ -461,15 +525,22 @@
 </li>
 <li>
 <p>Run the app:</p>
-<div class="highlight"><pre><span></span><code><span class="go">flask run</span>
+<div class="highlight"><pre><span></span><code><span class="go">flask run --host=0.0.0.0 --port=8080</span>
 </code></pre></div>
 </li>
 <li>
-<p>Browse to the sample application at <code>http://localhost:5000</code> in a web browser.</p>
+<p>Browse to the sample application at <code>http://IP-publico-da-instancia:8080</code> in a web browser.</p>
 <p>:::image type="content" source="./media/quickstart-python/run-flask-app-localhost.png" alt-text="Screenshot of the Flask app running locally in a browser":::</p>
 </li>
 </ol>
 <p>Having issues? <a href="https://aka.ms/PythonAppServiceQuickstartFeedback">Let us know</a>.</p>
+<h3 id="tente-acessar-nao-funciona-ainda-neh">Tente acessar ..... não funciona ainda neh....<a class="headerlink" href="#tente-acessar-nao-funciona-ainda-neh" title="Permanent link">&para;</a></h3>
+<h3 id="falta-liberar-o-security-group-para-esta-maquina">Falta liberar o Security Group para esta Maquina.<a class="headerlink" href="#falta-liberar-o-security-group-para-esta-maquina" title="Permanent link">&para;</a></h3>
+<h3 id="vamos-voltar-ao-portal-e-liberar-o-acesso-nas-regras-do-grupo-de-seguranca">Vamos voltar ao Portal e liberar o acesso, nas regras do grupo de seguranca.<a class="headerlink" href="#vamos-voltar-ao-portal-e-liberar-o-acesso-nas-regras-do-grupo-de-seguranca" title="Permanent link">&para;</a></h3>
+<h1 id="depois-de-acessar-e-ver-que-funciona">Depois de acessar e ver que funciona.<a class="headerlink" href="#depois-de-acessar-e-ver-que-funciona" title="Permanent link">&para;</a></h1>
+<h1 id="destruir-o-que-criamos">Destruir o que criamos<a class="headerlink" href="#destruir-o-que-criamos" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><span class="go">az group delete -n MyRG</span>
+</code></pre></div>
 <!-- 
 
 
