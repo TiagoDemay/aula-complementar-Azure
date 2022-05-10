@@ -1,5 +1,45 @@
 # 02
 
+# Inicio da Aula 2
+
+Vamos iniciar a aula pensando em custos e a problematica de esqueceer recursos alocados.
+
+Como visto na apresentaćao da aula 1, a computacao em nuvem nos dá a possibilidade de utilizar recursos, ferramentas e softwares de ultima geracão, pagando somente pela alocacão destes recursos, porem devemos lembrar de apagar estes recursos quando não estamos mais utilizando (se não o proposito é perdido). 
+
+
+## Verificar Custos e Créditos
+
+Então iremos ver nosso "crédito" e criar um alarme para não sermos surpriendidos com gastos futuros.
+
+Vamos utilizar as etapas abaixo:
+
+* Pesquisar ---->>>>   Cost Management + Billing
+* Biling profile
+* Create budget
+
+
+## All Services
+
+Vamos dar uma caminhada pelos servicos agora.
+
+* Pesquisar ---->>>>   All services
+
+Na aba lateral temos os grupos de servicos que a Azure nos fornece.
+
+Entre em cada uma das abas e verifique os nomes dos servicos.
+
+
+# Documentacao Microsoft
+
+É possivel aprender muito com a documentacao oficial da própria Microsoft.
+
+A Documentacão é bem completa e possui diversos exemplos e tutoriais.
+
+[Link-da-documentacao](https://docs.microsoft.com/pt-br/)
+
+
+
+
 
 
 # Quickstart: Deploy a Python Flask web app to Azure App Service

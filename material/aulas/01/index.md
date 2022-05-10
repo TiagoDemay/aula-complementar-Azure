@@ -4,24 +4,27 @@
 ## Virtualizacao
 
 
-Acredita-se que o conceito de virtualização tenha suas origens nos dias do mainframe no final dos anos 1960 e início dos anos 1970, quando a IBM investiu muito tempo e esforço no desenvolvimento de soluções robustas de compartilhamento de tempo. "\n"
+Acredita-se que o conceito de virtualização tenha suas origens nos dias do mainframe no final dos anos 1960 e início dos anos 1970, quando a IBM investiu muito tempo e esforço no desenvolvimento de soluções robustas de compartilhamento de tempo.
+
 O compartilhamento de tempo refere-se ao uso compartilhado de recursos do computador entre um grande grupo de usuários, com o objetivo de aumentar a eficiência dos usuários e dos recursos dispendiosos do computador que eles compartilham. Esse modelo representou um grande avanço na tecnologia de computadores: o custo de fornecer capacidade de computação caiu consideravelmente e tornou-se possível e usar um computador sem realmente possuí-lo. Motivos semelhantes estão impulsionando a virtualização para a computação padrão do setor hoje: a capacidade em um único servidor é tão grande que é quase impossível para a maioria das cargas de trabalho usá-la com eficiência. A melhor maneira de melhorar a utilização de recursos e, ao mesmo tempo, simplificar o gerenciamento do data center é por meio da virtualização.
 
 Os data centers hoje usam técnicas de virtualização para fazer abstração do hardware físico, criar grandes pools agregados de recursos lógicos que consistem em CPUs, memória, discos, armazenamento de arquivos, aplicativos, rede e oferecer esses recursos a usuários ou clientes na forma de agilidade, máquinas virtuais escaláveis ​​e consolidadas. Embora a tecnologia e os casos de uso tenham evoluído, o significado central da virtualização permanece o mesmo: permitir que um ambiente de computação execute vários sistemas independentes ao mesmo tempo.
 
 
 
-## Nuvem?
+## Nuvem
 
-Se você olhar para a história, na década de 1960 , quando os computadores eram muito caros, a IBM e a DEC (compaq e depois HP) costumavam fornecer seus computadores para compartilhamento de tempo. Você pode enviar tarefas para serem executadas em mainframes IBM. 
-Em 1972 a IBM desenvolveu a primeira Máquina Virtual.
-O símbolo da nuvem foi usado em 1977.
-Uma vez que a internet e a world wide web entraram em cena, muitas empresas de telecomunicações ofereceram VPN ou rede virtual privada e a Compaq começou a oferecer espaço em disco online onde você poderia manter arquivos.
-A própria palavra nuvem foi cunhada por Ramesh Chellappa em 1997. A palavra nuvem foi usada como uma metáfora para a Internet e o símbolo da nuvem foi usado para representar a rede de equipamentos de computação.  
-Em 1999 , empresas de nuvem como Salesforce e VMWare foram incorporadas .
-Em 2002 a Amazon lançou o Amazon Web Services , em 2006 o Hadoop foi lançado.
-Em 2008 , o Google lançou o Google App Engine
-m 2010 , a Mirosoft lançou o Microsoft Azure e, nos anos seguintes, quase todo mundo entrou na onda da computação em nuvem.
+Se você olhar para a história:
+
+* Na década de 1960 , quando os computadores eram muito caros, a IBM e a DEC (compaq e depois HP) costumavam fornecer seus computadores para compartilhamento de tempo. * Nesta época você já podia enviar tarefas para serem executadas em mainframes IBM.
+* Em 1972 a IBM desenvolveu a primeira Máquina Virtual.
+* O símbolo da nuvem foi usado em 1977.
+* Uma vez que a internet e a world wide web entraram em cena, muitas empresas de telecomunicações ofereceram VPN ou rede virtual privada e a Compaq começou a oferecer espaço em disco online onde você poderia manter arquivos.
+* A própria palavra nuvem foi cunhada por Ramesh Chellappa em 1997. A palavra nuvem foi usada como uma metáfora para a Internet e o símbolo da nuvem foi usado para representar a rede de equipamentos de computação.  
+* Em 1999 , empresas de nuvem como Salesforce e VMWare foram incorporadas .
+* Em 2002 a Amazon lançou o Amazon Web Services , em 2006 o Hadoop foi lançado.
+* Em 2008 , o Google lançou o Google App Engine
+* Em 2010 , a Mirosoft lançou o Microsoft Azure e, nos anos seguintes, quase todo mundo entrou na onda da computação em nuvem.
 
 
 
