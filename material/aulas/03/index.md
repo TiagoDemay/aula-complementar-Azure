@@ -16,29 +16,33 @@ Antes de abrir irá perguntar BASH ou PowerShell..... escolher BASH
 * Opcionalmente, você pode especificar um nome com o argumento --name <app-name>. Se você não fornecer um, um nome será gerado automaticamente.
 * Opcionalmente, você pode incluir o argumento --location <location-name>, em que <location_name> é uma região do Azure disponível. Você pode recuperar uma lista de regiões permitidas para sua conta do Azure executando o comando az account list-locations.
 
-```console
-az account list
-```
+    ```console
+    az account list
+    ```
 
-```console
-git clone https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart
-```
+    ```console
+    git clone https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart
+    ```
 
-```console
-az appservice list-locations --sku B1
-```
+    ```Console
+    cd msdocs-python-flask-webapp-quickstart
+    ```
 
-```console
-az webapp up \
-    --runtime 'PYTHON:3.9' \
-    --sku B1 \
-    --location eastasia \
-    --name MeuApp-Facil
-```    
+    ```console
+    az appservice list-locations --sku B1
+    ```
 
-```console
-az appservice plan list
-```
+    ```console
+    az webapp up \
+        --runtime 'PYTHON:3.9' \
+        --sku B1 \
+        --location eastasia \
+        --name MeuApp-Facil
+    ```    
+
+    ```console
+    az appservice plan list
+    ```
 
 # Implantar um aplicativo Python (Django ou Flask) com o PostgreSQL no Azure
 
