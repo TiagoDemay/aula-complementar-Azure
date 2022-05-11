@@ -474,6 +474,7 @@ shared with Linux containers. For more information see
 <p>The following command is used to delete the Docker container when you no longer need it.</p>
 <div class="highlight"><pre><span></span><code><span class="go">docker rmi mcr.microsoft.com/azure-powershell</span>
 </code></pre></div>
+<h2 id="-">-------------------------------------------------------------------------------------------------------------------------<a class="headerlink" href="#-" title="Permanent link">&para;</a></h2>
 <h1 id="criar-uma-instancia-com-o-cli-da-azure">Criar uma Instancia com o CLI da Azure<a class="headerlink" href="#criar-uma-instancia-com-o-cli-da-azure" title="Permanent link">&para;</a></h1>
 <p>Vamos utilizar a ferramenta Cli atrelado ao Web Browser, fica mais rapido para demonstrar, porem para utilizacao, recomendo instalar a CLI na maquina de trabalho.</p>
 <p>Este link leva direto para um Container com as configuracoes ja feitas e as ferramentas já instaladas.
@@ -481,9 +482,8 @@ shared with Linux containers. For more information see
 <p>Antes de abrir irá perguntar BASH ou PowerShell..... escolher BASH</p>
 <p><a href="https://docs.microsoft.com/pt-br/azure/cloud-shell/quickstart#code-try-0">Documentacao-quick-start</a></p>
 <div class="highlight"><pre><span></span><code><span class="go">az account list</span>
-<span class="go">az account set --subscription &#39;my-subscription-name&#39;</span>
 <span class="go">az account set --subscription &#39;Azure for Students&#39;</span>
-<span class="go">az group create --location westus --name MyRG</span>
+<span class="go">az group create --location eastasia --name MyRG</span>
 <span class="go">az vm create -n myVM -g MyRG --image UbuntuLTS --generate-ssh-keys</span>
 </code></pre></div>
 <p>Vamos até o Portal da AZure e verificar que o Resorce Group foi criado e a Instancia está sendo iniciada.
@@ -493,17 +493,17 @@ Aguardar a maquina ficar Ready.</p>
 <h2 id="1-sample-application">1 - Sample application<a class="headerlink" href="#1-sample-application" title="Permanent link">&para;</a></h2>
 <p>This quickstart can be completed using either Flask or Django. A sample application in each framework is provided to help you follow along with this quickstart. Download or clone the sample application to your local workstation.</p>
 <h3 id="flask">[Flask]<a class="headerlink" href="#flask" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="go">sudo apt update</span>
+<div class="highlight"><pre><span></span><code>sudo apt update
 
-<span class="go">sudo apt install python3-dev</span>
+sudo apt install python3-dev
 
-<span class="go">sudo apt install python3-venv</span>
+sudo apt install python3-venv
 
-<span class="go">git clone https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart</span>
+git clone https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart
 
-<span class="go">python3 -m venv .venv</span>
+python3 -m venv .venv
 
-<span class="go">source .venv/bin/activate</span>
+source .venv/bin/activate
 </code></pre></div>
 <hr />
 <p>To run the application locally:</p>
@@ -513,10 +513,6 @@ Aguardar a maquina ficar Ready.</p>
 <p>Go to the application folder:</p>
 <div class="highlight"><pre><span></span><code><span class="go">cd msdocs-python-flask-webapp-quickstart</span>
 </code></pre></div>
-</li>
-<li>
-<p>Create a virtual environment for the app:</p>
-<p>[!INCLUDE <a href="./includes/quickstart-python/virtual-environment-setup.md">Virtual environment setup</a>]</p>
 </li>
 <li>
 <p>Install the dependencies:</p>
@@ -530,10 +526,8 @@ Aguardar a maquina ficar Ready.</p>
 </li>
 <li>
 <p>Browse to the sample application at <code>http://IP-publico-da-instancia:8080</code> in a web browser.</p>
-<p>:::image type="content" source="./media/quickstart-python/run-flask-app-localhost.png" alt-text="Screenshot of the Flask app running locally in a browser":::</p>
 </li>
 </ol>
-<p>Having issues? <a href="https://aka.ms/PythonAppServiceQuickstartFeedback">Let us know</a>.</p>
 <h3 id="tente-acessar-nao-funciona-ainda-neh">Tente acessar ..... não funciona ainda neh....<a class="headerlink" href="#tente-acessar-nao-funciona-ainda-neh" title="Permanent link">&para;</a></h3>
 <h3 id="falta-liberar-o-security-group-para-esta-maquina">Falta liberar o Security Group para esta Maquina.<a class="headerlink" href="#falta-liberar-o-security-group-para-esta-maquina" title="Permanent link">&para;</a></h3>
 <h3 id="vamos-voltar-ao-portal-e-liberar-o-acesso-nas-regras-do-grupo-de-seguranca">Vamos voltar ao Portal e liberar o acesso, nas regras do grupo de seguranca.<a class="headerlink" href="#vamos-voltar-ao-portal-e-liberar-o-acesso-nas-regras-do-grupo-de-seguranca" title="Permanent link">&para;</a></h3>
@@ -541,204 +535,6 @@ Aguardar a maquina ficar Ready.</p>
 <h1 id="destruir-o-que-criamos">Destruir o que criamos<a class="headerlink" href="#destruir-o-que-criamos" title="Permanent link">&para;</a></h1>
 <div class="highlight"><pre><span></span><code><span class="go">az group delete -n MyRG</span>
 </code></pre></div>
-<!-- 
-
-
-## 2 - Create a web app in Azure
-
-To host your application in Azure, you need to create Azure App Service web app in Azure. You can create a web app using the [Azure portal](https://portal.azure.com/), [VS Code](https://code.visualstudio.com/) using the [Azure Tools extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack), or the Azure CLI.
-
-### [Azure portal](#tab/azure-portal)
-
-Sign in to the [Azure portal](https://portal.azure.com/) and follow these steps to create your Azure App Service resources.
-
-| Instructions    | Screenshot |
-|:----------------|-----------:|
-| [!INCLUDE [Create app service step 1](<./includes/quickstart-python/create-app-service-azure-portal-1.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-azure-portal-1-240px.png" alt-text="A screenshot of how to use the search box in the top tool bar to find App Services in Azure." lightbox="./media/quickstart-python/create-app-service-azure-portal-1.png"::: |
-| [!INCLUDE [Create app service step 1](<./includes/quickstart-python/create-app-service-azure-portal-2.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-azure-portal-2-240px.png" alt-text="A screenshot of the location of the Create button on the App Services page in the Azure portal." lightbox="./media/quickstart-python/create-app-service-azure-portal-2.png"::: |
-| [!INCLUDE [Create app service step 1](<./includes/quickstart-python/create-app-service-azure-portal-3.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-azure-portal-3-240px.png" alt-text="A screenshot of how to fill out the form to create a new App Service in the Azure portal." lightbox="./media/quickstart-python/create-app-service-azure-portal-3.png"::: |
-| [!INCLUDE [Create app service step 1](<./includes/quickstart-python/create-app-service-azure-portal-4.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-azure-portal-4-240px.png" alt-text="A screenshot of how to select the basic app service plan in the Azure portal." lightbox="./media/quickstart-python/create-app-service-azure-portal-4.png"::: |
-| [!INCLUDE [Create app service step 1](<./includes/quickstart-python/create-app-service-azure-portal-5.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-azure-portal-5-240px.png" alt-text="A screenshot of the location of the Review plus Create button in the Azure portal." lightbox="./media/quickstart-python/create-app-service-azure-portal-5.png"::: |
-
-### [VS Code](#tab/vscode-aztools)
-
-To create Azure resources in VS Code, you must have the [Azure Tools extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) installed and be signed into Azure from VS Code.
-
-> [!div class="nextstepaction"]
-> [Download Azure Tools extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
-
-| Instructions    | Screenshot |
-|:----------------|-----------:|
-| [!INCLUDE [Create app service step 1](<./includes/quickstart-python/create-app-service-visual-studio-code-1.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-visual-studio-code-1-240px.png" alt-text="A Screenshot of the Azure Tools icon in the left toolbar of VS Code." lightbox="./media/quickstart-python/create-app-service-visual-studio-code-1.png"::: |
-| [!INCLUDE [Create app service step 2](<./includes/quickstart-python/create-app-service-visual-studio-code-2.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-visual-studio-code-2-240px.png" alt-text="A screenshot of the App Service section of Azure Tools extension and the context menu used to create a new web app." lightbox="./media/quickstart-python/create-app-service-visual-studio-code-2.png"::: |
-| [!INCLUDE [Create app service step 4](<./includes/quickstart-python/create-app-service-visual-studio-code-3.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-visual-studio-code-3-240px.png" alt-text="A screenshot of dialog box used to enter the name of the new web app in Visual Studio Code." lightbox="./media/quickstart-python/create-app-service-visual-studio-code-3.png"::: |
-| [!INCLUDE [Create app service step 5](<./includes/quickstart-python/create-app-service-visual-studio-code-4.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-visual-studio-code-4-240px.png" alt-text="A screenshot of the dialog box in VS Code used to select the runtime for the new web app." lightbox="./media/quickstart-python/create-app-service-visual-studio-code-4.png"::: |
-| [!INCLUDE [Create app service step 6](<./includes/quickstart-python/create-app-service-visual-studio-code-5.md>)] | :::image type="content" source="./media/quickstart-python/create-app-service-visual-studio-code-5-240px.png" alt-text="A screenshot of the dialog in VS Code used to select the App Service plan for the new web app." lightbox="./media/quickstart-python/create-app-service-visual-studio-code-5.png"::: |
-
-### [Azure CLI](#tab/azure-cli)
-
-[!INCLUDE [Create CLI](<./includes/quickstart-python/create-app-cli.md>)]
-
----
-
-Having issues? [Let us know](https://aka.ms/PythonAppServiceQuickstartFeedback).
-
-## 3 - Deploy your application code to Azure
-
-Azure App service supports multiple methods to deploy your application code to Azure including support for GitHub Actions and all major CI/CD tools. This article focuses on how to deploy your code from your local workstation to Azure.
-
-### [Deploy using VS Code](#tab/vscode-deploy)
-
-To deploy a web app from VS Code, you must have the [Azure Tools extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) installed and be signed into Azure from VS Code.
-
-> [!div class="nextstepaction"]
-> [Download Azure Tools extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
-
-| Instructions    | Screenshot |
-|:----------------|-----------:|
-| [!INCLUDE [VS Code deploy step 1](<./includes/quickstart-python/deploy-visual-studio-code-1.md>)] | :::image type="content" source="./media/quickstart-python/deploy-visual-studio-code-1-240px.png" alt-text="A screenshot of the location of the Azure Tools icon in the left toolbar of VS Code." lightbox="./media/quickstart-python/deploy-visual-studio-code-1.png"::: |
-| [!INCLUDE [VS Code deploy step 2](<./includes/quickstart-python/deploy-visual-studio-code-2.md>)] | :::image type="content" source="./media/quickstart-python/deploy-visual-studio-code-2-240px.png" alt-text="A screenshot of the context menu of an App Service and the deploy to web app menu option." lightbox="./media/quickstart-python/deploy-visual-studio-code-2.png"::: |
-| [!INCLUDE [VS Code deploy step 3](<./includes/quickstart-python/deploy-visual-studio-code-3.md>)] | :::image type="content" source="./media/quickstart-python/deploy-visual-studio-code-3-240px.png" alt-text="A screenshot dialog in VS Code used to choose the app to deploy." lightbox="./media/quickstart-python/deploy-visual-studio-code-3.png"::: |
-| [!INCLUDE [VS Code deploy step 4](<./includes/quickstart-python/deploy-visual-studio-code-4.md>)] | :::image type="content" source="./media/quickstart-python/deploy-visual-studio-code-4-240px.png" alt-text="A screenshot of a dialog box in VS Code asking if you want to update your workspace to run build commands." lightbox="./media/quickstart-python/deploy-visual-studio-code-4.png"::: |
-| [!INCLUDE [VS Code deploy step 5](<./includes/quickstart-python/deploy-visual-studio-code-5.md>)] | :::image type="content" source="./media/quickstart-python/deploy-visual-studio-code-5-240px.png" alt-text="A screenshot showing the confirmation dialog when the app code has been deployed to Azure." lightbox="./media/quickstart-python/deploy-visual-studio-code-5.png"::: |
-
-### [Deploy using Azure CLI](#tab/azure-cli-deploy)
-
-[!INCLUDE [Deploy Azure CLI](<./includes/quickstart-python/deploy-cli.md>)]
-
-### [Deploy using Local Git](#tab/local-git-deploy)
-
-[!INCLUDE [Deploy Local Git](<./includes/quickstart-python/deploy-local-git.md>)]
-
-### [Deploy using a ZIP file](#tab/zip-deploy)
-
-[!INCLUDE [Deploy using ZIP file](<./includes/quickstart-python/deploy-zip-file.md>)]
-
----
-
-Having issues? Refer first to the [Troubleshooting guide](./configure-language-python.md#troubleshooting), otherwise, [let us know](https://aka.ms/PythonAppServiceQuickstartFeedback).
-
-## 4 - Browse to the app
-
-Browse to the deployed application in your web browser at the URL `http://<app-name>.azurewebsites.net`. If you see a default app page, wait a minute and refresh the browser.
-
-The Python sample code is running a Linux container in App Service using a built-in image.
-
-:::image type="content" source="./media/quickstart-python/run-app-azure.png" alt-text="Screenshot of the app running in Azure":::
-
-**Congratulations!** You've deployed your Python app to App Service.
-
-Having issues? Refer first to the [Troubleshooting guide](./configure-language-python.md#troubleshooting), otherwise, [let us know](https://aka.ms/PythonAppServiceQuickstartFeedback).
-
-## 5 - Stream logs
-
-Azure App Service captures all messages output to the console to assist you in diagnosing issues with your application. The sample apps include `print()` statements to demonstrate this capability.
-
-### [Flask](#tab/flask)
-
-:::code language="python" source="~/msdocs-python-flask-webapp-quickstart/app.py" range="6-21" highlight="3,12,15":::
-
-### [Django](#tab/django)
-
-:::code language="python" source="~/msdocs-python-django-webapp-quickstart/hello_azure/views.py" range="5-21" highlight="2,11,14":::
-
----
-
-The contents of the App Service diagnostic logs can be reviewed in the Azure portal, VS Code, or using the Azure CLI.
-
-### [Azure portal](#tab/azure-portal)
-
-| Instructions    | Screenshot |
-|:----------------|-----------:|
-| [!INCLUDE [Stream logs from Azure portal 1](<./includes/quickstart-python/stream-logs-azure-portal-1.md>)] | :::image type="content" source="./media/quickstart-python/stream-logs-azure-portal-1-240px.png" alt-text="A screenshot of the location in the Azure portal where to enable streaming logs." lightbox="./media/quickstart-python/stream-logs-azure-portal-1.png"::: |
-| [!INCLUDE [Stream logs from Azure portal 2](<./includes/quickstart-python/stream-logs-azure-portal-2.md>)] | :::image type="content" source="./media/quickstart-python/stream-logs-azure-portal-2-240px.png" alt-text="A screenshot of how to view logs in the Azure portal." lightbox="./media/quickstart-python/stream-logs-azure-portal-2.png"::: |
-
-### [VS Code](#tab/vscode-aztools)
-
-| Instructions    | Screenshot |
-|:----------------|-----------:|
-| [!INCLUDE [Stream logs from VS Code 1](<./includes/quickstart-python/stream-logs-visual-studio-code-1.md>)] | :::image type="content" source="./media/quickstart-python/stream-logs-vs-code-1-240px.png" alt-text="A screenshot of how to start streaming logs with the VS Code extension." lightbox="./media/quickstart-python/stream-logs-vs-code-1.png"::: |
-| [!INCLUDE [Stream logs from VS Code 2](<./includes/quickstart-python/stream-logs-visual-studio-code-2.md>)] | :::image type="content" source="./media/quickstart-python/stream-logs-vs-code-2-240px.png" alt-text="A screenshot of an example of streaming logs in the VS Code Output window." lightbox="./media/quickstart-python/stream-logs-vs-code-2.png"::: |
-
-### [Azure CLI](#tab/azure-cli)
-
-First, you need to configure Azure App Service to output logs to the App Service filesystem using the [az webapp log config](/cli/azure/webapp/log#az-webapp-log-config) command.
-
-[!INCLUDE [CLI stream logs configure](<./includes/quickstart-python/stream-logs-cli-1.md>)]
-
-To stream logs, use the [az webapp log tail](/cli/azure/webapp/log#az-webapp-log-tail) command.
-
-[!INCLUDE [CLI stream logs tail](<./includes/quickstart-python/stream-logs-cli-2.md>)]
-
-Refresh the home page in the app or attempt other requests to generate some log messages. The output should look similar to the following.
-
-<div class="highlight"><pre><span></span><code><span class="go">Starting Live Log Stream ---</span>
-
-<span class="go">2021-12-23T02:15:52.740703322Z Request for index page received</span>
-<span class="go">2021-12-23T02:15:52.740740222Z 169.254.130.1 - - [23/Dec/2021:02:15:52 +0000] &quot;GET / HTTP/1.1&quot; 200 1360 &quot;https://msdocs-python-webapp-quickstart-123.azurewebsites.net/hello&quot; &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0&quot;</span>
-<span class="go">2021-12-23T02:15:52.841043070Z 169.254.130.1 - - [23/Dec/2021:02:15:52 +0000] &quot;GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1&quot; 200 0 &quot;https://msdocs-python-webapp-quickstart-123.azurewebsites.net/&quot; &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0&quot;</span>
-<span class="go">2021-12-23T02:15:52.884541951Z 169.254.130.1 - - [23/Dec/2021:02:15:52 +0000] &quot;GET /static/images/azure-icon.svg HTTP/1.1&quot; 200 0 &quot;https://msdocs-python-webapp-quickstart-123.azurewebsites.net/&quot; &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0&quot;</span>
-<span class="go">2021-12-23T02:15:53.043211176Z 169.254.130.1 - - [23/Dec/2021:02:15:53 +0000] &quot;GET /favicon.ico HTTP/1.1&quot; 404 232 &quot;https://msdocs-python-webapp-quickstart-123.azurewebsites.net/&quot; &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0&quot;</span>
-
-<span class="go">2021-12-23T02:16:01.304306845Z Request for hello page received with name=David</span>
-<span class="go">2021-12-23T02:16:01.304335945Z 169.254.130.1 - - [23/Dec/2021:02:16:01 +0000] &quot;POST /hello HTTP/1.1&quot; 200 695 &quot;https://msdocs-python-webapp-quickstart-123.azurewebsites.net/&quot; &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0&quot;</span>
-<span class="go">2021-12-23T02:16:01.398399251Z 169.254.130.1 - - [23/Dec/2021:02:16:01 +0000] &quot;GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1&quot; 304 0 &quot;https://msdocs-python-webapp-quickstart-123.azurewebsites.net/hello&quot; &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0&quot;</span>
-<span class="go">2021-12-23T02:16:01.430740060Z 169.254.130.1 - - [23/Dec/2021:02:16:01 +0000] &quot;GET /static/images/azure-icon.svg HTTP/1.1&quot; 304 0 &quot;https://msdocs-python-webapp-quickstart-123.azurewebsites.net/hello&quot; &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0&quot;</span>
-</code></pre></div>
-
----
-
-Having issues? Refer first to the [Troubleshooting guide](./configure-language-python.md#troubleshooting), otherwise, [let us know](https://aka.ms/PythonAppServiceQuickstartFeedback).
-
-## Clean up resources
-
-When you're finished with the sample app, you can remove all of the resources for the app from Azure. It will not incur extra charges and keep your Azure subscription uncluttered. Removing the resource group also removes all resources in the resource group and is the fastest way to remove all Azure resources for your app.
-
-### [Azure portal](#tab/azure-portal)
-
-Follow these steps while signed-in to the Azure portal to delete a resource group.
-
-| Instructions    | Screenshot |
-|:----------------|-----------:|
-| [!INCLUDE [Remove resource group Azure portal 1](<./includes/quickstart-python/remove-resource-group-azure-portal-1.md>)] | :::image type="content" source="./media/quickstart-python/remove-resource-group-azure-portal-1-240px.png" alt-text="A screenshot of how to search for and navigate to a resource group in the Azure portal." lightbox="./media/quickstart-python/remove-resource-group-azure-portal-1.png"::: |
-| [!INCLUDE [Remove resource group Azure portal 2](<./includes/quickstart-python/remove-resource-group-azure-portal-2.md>)] | :::image type="content" source="./media/quickstart-python/remove-resource-group-azure-portal-2-240px.png" alt-text="A screenshot of the location of the Delete Resource Group button in the Azure portal." lightbox="./media/quickstart-python/remove-resource-group-azure-portal-2.png"::: |
-| [!INCLUDE [Remove resource group Azure portal 3](<./includes/quickstart-python/remove-resource-group-azure-portal-3.md>)] | :::image type="content" source="./media/quickstart-python/remove-resource-group-azure-portal-3-240px.png" alt-text="A screenshot of the confirmation dialog for deleting a resource group in the Azure portal." lightbox="./media/quickstart-python/remove-resource-group-azure-portal-3.png"::: |
-
-### [VS Code](#tab/vscode-aztools)
-
-| Instructions    | Screenshot |
-|:----------------|-----------:|
-| [!INCLUDE [Remove resource group VS Code 1](<./includes/quickstart-python/remove-resource-group-visual-studio-code-1.md>)] | :::image type="content" source="./media/quickstart-python/remove-resource-group-visual-studio-code-1-240px.png" alt-text="A screenshot of how to delete a resource group in VS Code using the Azure Tools extension." lightbox="./media/quickstart-python/remove-resource-group-visual-studio-code-1.png"::: |
-| [!INCLUDE [Remove resource group VS Code 2](<./includes/quickstart-python/remove-resource-group-visual-studio-code-2.md>)] | :::image type="content" source="./media/quickstart-python/remove-resource-group-visual-studio-code-2-240px.png" alt-text="A screenshot of the confirmation dialog for deleting a resource group from VS Code." lightbox="./media/quickstart-python/remove-resource-group-visual-studio-code-2.png"::: |
-
-### [Azure CLI](#tab/azure-cli)
-
-Delete the resource group by using the [az group delete](/cli/azure/group#az-group-delete) command.
-
-<div class="highlight"><pre><span></span><code>az group delete \
-    --name msdocs-python-webapp-quickstart \
-    --no-wait
-</code></pre></div>
-
-The `--no-wait` argument allows the command to return before the operation is complete.
-
----
-
-Having issues? [Let us know](https://aka.ms/PythonAppServiceQuickstartFeedback).
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Tutorial: Python (Django) web app with PostgreSQL](./tutorial-python-postgresql-app.md)
-
-> [!div class="nextstepaction"]
-> [Configure Python app](./configure-language-python.md)
-
-> [!div class="nextstepaction"]
-> [Add user sign-in to a Python web app](../active-directory/develop/quickstart-v2-python-webapp.md)
-
-> [!div class="nextstepaction"]
-> [Tutorial: Run Python app in custom container](./tutorial-custom-container.md) -->
 
               
             </article>
