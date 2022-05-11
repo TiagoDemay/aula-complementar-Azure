@@ -423,11 +423,13 @@
 <li>O parâmetro --sku define o tamanho (CPU, memória) e o custo do plano do Serviço de Aplicativo. Este exemplo usa o plano de serviço B1 (Básico), que gerará um pequeno custo em sua assinatura do Azure. Para obter uma lista completa dos planos do Serviço de Aplicativo, exiba a página de Preço do Serviço de Aplicativo.</li>
 <li>O sinalizador --logs configura o log padrão necessário para habilitar a exibição do fluxo de log imediatamente após a inicialização do aplicativo Web.</li>
 <li>Opcionalmente, você pode especificar um nome com o argumento --name <app-name>. Se você não fornecer um, um nome será gerado automaticamente.</li>
-<li>Opcionalmente, você pode incluir o argumento --location <location-name>, em que <location_name> é uma região do Azure disponível. Você pode recuperar uma lista de regiões permitidas para sua conta do Azure executando o comando az account list-locations.</li>
-</ul>
+<li>
+<p>Opcionalmente, você pode incluir o argumento --location <location-name>, em que <location_name> é uma região do Azure disponível. Você pode recuperar uma lista de regiões permitidas para sua conta do Azure executando o comando az account list-locations.</p>
 <div class="highlight"><pre><span></span><code><span class="go">az account list</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="go">git clone https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="go">cd msdocs-python-flask-webapp-quickstart</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="go">az appservice list-locations --sku B1</span>
 </code></pre></div>
@@ -439,6 +441,8 @@
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="go">az appservice plan list</span>
 </code></pre></div>
+</li>
+</ul>
 <h1 id="implantar-um-aplicativo-python-django-ou-flask-com-o-postgresql-no-azure">Implantar um aplicativo Python (Django ou Flask) com o PostgreSQL no Azure<a class="headerlink" href="#implantar-um-aplicativo-python-django-ou-flask-com-o-postgresql-no-azure" title="Permanent link">&para;</a></h1>
 <p><a href="https://docs.microsoft.com/pt-br/azure/app-service/tutorial-python-postgresql-app?tabs=flask%2Cmac-linux%2Cazure-cli%2Cterminal-bash%2Cazure-portal-access%2Cvscode-aztools-deploy%2Cdeploy-instructions-azportal%2Cdeploy-instructions--zip-azcli%2Cdeploy-instructions-curl-bash">Documentacao-Oficial</a></p>
 
