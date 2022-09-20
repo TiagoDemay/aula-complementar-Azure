@@ -6,17 +6,19 @@
     * Tiago Demay
 
 * **Horário das aulas**:
-    * Segunda - 18h - 19h  18/04/2022
-    * Terca   - 18h - 20h  19/04/2022
-    * Quarta  - 18h - 20h  20/04/2022
+    * Quarta - 18h - 20h  21/09/2022
+    * Terca  - 18h - 20h  26/09/2022
+    * Quarta - 18h - 20h  28/09/2022
 
 
 ### Ao final da atividade o aluno será capaz de:
-Compreender a utilizacao da CSM (Cloud Service Management) Azure;
-Entender conceitos de computação em nuvem;
-Compreender os recursos de computacao em nuvem;
-Criar uma aplicação Web Python - FLASK;
-Modificar aplicações já criadas.
+
+!!! competencias
+   1. Compreender a utilizacao da CSM (Cloud Service Management) Azure;
+   1. Entender conceitos de computação em nuvem;
+   1. Compreender os recursos de computacao em nuvem;
+   1. Criar uma aplicação Web Python - FLASK;
+   1. Modificar aplicações já criadas.
 
 
 ### Objetivo: 
