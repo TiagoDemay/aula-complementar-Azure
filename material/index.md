@@ -27,4 +27,4 @@ Apresentar os conceitos de computacao em nuvem utilizando a CSM (Azure), entrega
 
 ## A Prova final é individual
 
-* !!! failure "Brincadeira....... aqui não tem Prova!!!!!!!!!!"
+!!! failure "Brincadeira....... aqui não tem Prova!!!!!!!!!!"
