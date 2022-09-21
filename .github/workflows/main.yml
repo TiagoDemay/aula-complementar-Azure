@@ -1,6 +1,12 @@
 name: ci
 on:
+<<<<<<< HEAD
   dynamic
+=======
+  push:
+    branches:
+    - main  
+>>>>>>> refs/remotes/origin/master
   
 # Environment
 env:
