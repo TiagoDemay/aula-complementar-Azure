@@ -34,7 +34,7 @@ nav:
 
     - Aulas:
         - "01 - Introdução":     aulas/01/index.md
- #       - "02 - Implementando":  aulas/02/index.md
+        - "02 - Implementando":  aulas/02/index.md
  #       - "03 - Modificando":    aulas/03/index.md
 
     - Projeto:
