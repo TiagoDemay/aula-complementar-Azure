@@ -1,6 +1,6 @@
 name: ci
 on:
-  dynamic:
+  push:
     branches:
     - main  
 # Environment
